@@ -2,7 +2,7 @@
 import {Transformer} from '@parcel/plugin';
 import {DOMParser, XMLSerializer} from '@xmldom/xmldom';
 import * as atom from './atom';
-import * as processingInstruction from './processing-instruction';
+import processingInstruction from './processing-instruction';
 import * as rss from './rss';
 
 const HANDLERS = {
