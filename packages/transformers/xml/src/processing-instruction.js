@@ -5,7 +5,7 @@ import {DOMParser, XMLSerializer} from '@xmldom/xmldom';
 // Flow doesn't define ProcessingInstruction by default.
 type ProcessingInstruction = CharacterData;
 
-module.exports = {
+export default {
   'xml-stylesheet': (node: ProcessingInstruction, asset: MutableAsset) => {
     const pseudo = new DOMParser().parseFromString(
       `<ψ ${node.data} />`,
